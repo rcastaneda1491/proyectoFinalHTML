@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-bar {
+    background-color: #201F24;
+    display: flex;
+    padding: 0 50px 0 50px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, .2);
+}
+
+#navlogo-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav-items {
+    width: 50%;
+    font-size: 17px;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu {
+    display: none;
+}
+
+label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+}
+
+.nav-item {
+    color: white;
+}
+
+#selected {
+    color: #ffffff;
+    background-color: #201F24;
+}
+
+#logo {
+    width: 35px;
+}
+
+.main-about {
+    background-color: #346ff9;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#main-div {
+    display: flex;
+    background-color: #346ff9;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-description p {
+    color: rgb(219, 219, 219);
+}
+
+#main-text {
+    width: 50%;
+    padding: 0px 70px 0px 70px;
+}
+
+#main-images {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+#main-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-logo {
+    height: 100px;
+}
+
+.title-courses h2 {
+    padding: 0 10% 0 10%;
+    margin-top: 50px;
+}
+
+.title-courses h3 {
+    padding: 0 11% 0 11%;
+    margin: 0
+}
+
+.container-card {
+    display: flex;
+    padding: 0 10% 0 10%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0 40px 0;
+}
+
+.div-card {
+    background-color: #E8E8E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 0 0 50px 50px;
+}
+
+.div-card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.4);
+}
+
+.card {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    color: #346ff9;
+}
+
+.card_container {
+    padding: 0 16px;
+    text-align: center;
+}
+
+#pie-pagina {
+    padding-left: 40px;
+    background-color: #201F24;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: white;
+}
+
+.section-button {
+    padding: 1vh;
+}
+
+.sections-container {
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto auto auto;
+    width: 100%;
+}
+
+.section-button {
+    border-right: 0.5px solid #201F24;
+    border-bottom: 0.5px solid #201F24;
+    border-top: 0.5px solid #201F24;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b4caff;
+}
+
+.section-button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    #navlogo-container {
+        width: 35%;
+    }
+
+    #nav-items {
+        width: 65%;
+    }
+
+    #main-text {
+        width: 35%;
+    }
+
+    #main-images {
+        width: 65%;
+    }
+
+    #main-div {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .sections-container {
+        font-size: 2.3vw;
+    }
+
+    #main-div {
+        font-size: 2.5vw;
+    }
+
+    .section {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #main-div {
+        padding: 35px 120px 35px 120px;
+        flex-direction: column;
+    }
+
+    #main-text {
+        width: 100%;
+    }
+
+    #main-images {
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    #navlogo-container {
+        width: 22%;
+    }
+
+    #nav-items {
+        width: 78%;
+    }
+
+    .sections-container {
+        font-size: 2.8vw;
+    }
+
+    #main-div {
+        font-size: 2.5vw;
+    }
+
+    .section {
+        font-size: 2.8vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    label {
+        display: inline-flex;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    #nav-items ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-items li {
+        border-top: 1px solid #ffffff;
+    }
+
+    #menu:checked~#nav-items {
+        display: none;
+        margin: 0;
+    }
+
+    #navlogo-container {
+        display: none;
+    }
+
+    #main-div {
+        padding: 35px 40px 35px 40px;
+    }
+
+    .container-card {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #main-text {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .div-card {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    #title-courses h2 {
+        margin-bottom: 0;
+    }
+
+    #nav-bar {
+        padding: 0 20px 0 20px;
+    }
+
+    #nav-items {
+        width: 90%;
+    }
+
+    #navlogo-container {
+        width: 15%;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sections-container {
+        font-size: 2.8vw;
+    }
+
+    #main-div {
+        font-size: 3vw;
+    }
+
+    .section {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #main-images {
+        display: none;
+    }
+
+    .sections-container {
+        font-size: 3.4vw;
+    }
+
+    #main-div {
+        font-size: 4vw;
+    }
+
+    #nav-bar {
+        font-size: 4vw;
+    }
+
+    .section {
+        font-size: 3.6vw;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .sections-container {
+        font-size: 3.5vw;
+        grid-template-columns: auto;
+    }
+
+    #main-div {
+        font-size: 4vw;
+    }
+
+    #nav-bar {
+        font-size: 4vw;
+    }
+
+    .section {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #main-div {
+        font-size: 4.2vw;
+    }
+
+    #nav-bar {
+        font-size: 4.2vw;
+    }
+
+    .sections-container {
+        font-size: 4.2vw;
+    }
+
+    .section {
+        font-size: 4.2vw;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    #main-div {
+        font-size: 6vw;
+    }
+
+    #nav-bar {
+        font-size: 6vw;
+    }
+
+    .sections-container {
+        font-size: 6vw;
+    }
+
+    .section {
+        font-size: 6vw;
+    }
+
+}

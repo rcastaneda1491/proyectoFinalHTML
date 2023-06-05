@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./temas.css">
+    <link rel="icon" type="image/png" href="../img/nav-logo.svg">
+    <title>RF | Entidad Relación</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div id="navlogo-container">
+            <img id="logo" src="../img/nav-logo.svg" alt="Logo">
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="../img/menu.svg" alt="Menu"></label>
+        <div id="nav-items">
+            <ul>
+                <li><a class="main-about" href="../index.html">Inicio</a></li>
+                <li><a class="main-about" href="../aboutMe/aboutMe.html">Sobre mí</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="texto_card">
+        <div id="info-itemDesc">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion.svg);">
+
+            </div>
+            <div class="info-text">
+                <h2>Entidad Relación</h2>
+                <h3>Descripción:</h3>
+                <p>
+                    En una base de datos, una entidad relación es un modelo conceptual que representa las entidades
+                    (objetos o conceptos) y las relaciones entre ellas. <br>
+                    Los diagramas de ER se relacionan con los diagramas de estructura de datos (DSD), que se centran en
+                    las relaciones de los elementos dentro de las entidades, en lugar de las relaciones entre las
+                    entidades mismas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-container">
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/1.png);">
+
+            </div>
+            <div class="info-text">
+                <h3>Entidades</h3>
+                <p>
+                    Las entidades representan objetos o conceptos del mundo real que tienen existencia independiente y
+                    atributos propios. Por ejemplo, en una base de datos de una tienda, las entidades pueden ser
+                    "cliente", "producto" y "pedido".
+                </p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/2.png);">
+
+            </div>
+            <div class="info-text">
+                <h3>Relaciones</h3>
+                <p>
+                    Las relaciones muestran cómo se conectan las entidades entre sí. Pueden ser de diferentes tipos,
+                    como uno a uno, uno a muchos o muchos a muchos. Por ejemplo, la relación entre "cliente" y "pedido"
+                    puede ser "uno a muchos", ya que un cliente puede realizar varios pedidos.
+                </p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/3.png);">
+
+            </div>
+            <div class="info-text">
+                <h3>Atributos</h3>
+                <p>
+                    Los atributos son características o propiedades de las entidades. Cada entidad tiene atributos
+                    específicos que describen sus características. Por ejemplo, el cliente puede tener atributos como el
+                    nombre, la dirección y el número de teléfono.
+                </p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/4.png);">
+
+            </div>
+            <div class="info-text">
+                <h3>Cardinalidad</h3>
+                <p>
+                    La cardinalidad define la cantidad de entidades con las que se relaciona otra entidad en una
+                    relación. Puede ser "uno", "muchos" o "opcional". Por ejemplo, en una relación "un cliente tiene
+                    muchos pedidos", la cardinalidad sería "uno a muchos".
+                </p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/5.jpg);">
+
+            </div>
+            <div class="info-text">
+                <h3>Normalización</h3>
+                <p>
+                    La normalización es un proceso utilizado para organizar los datos en una base de datos de manera
+                    eficiente y libre de redundancias. Se divide en diferentes formas normales (1NF, 2NF, 3NF, etc.)
+                    para garantizar que los datos estén estructurados de forma óptima y se eviten problemas como la
+                    duplicación de información.
+                </p>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-image" style="background-image: url(../img/entidadRelacion/6.png);">
+
+            </div>
+            <div class="info-text">
+                <h3>Integridad referencial</h3>
+                <p>
+                    La integridad referencial asegura que las relaciones entre entidades sean coherentes y válidas.
+                    Establece reglas que garantizan que no se puedan crear relaciones huérfanas (donde una entidad
+                    relacionada se elimina y la otra entidad queda sin conexión) o relaciones inconsistentes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer id="pie-pagina">
+        <p id="derechos">Autor | Rogelio Raúl Castañeda Flores</p>
+    </footer>
+</body>
+
+</html>

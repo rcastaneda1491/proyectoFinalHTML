@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" href="./img/nav-logo.svg">
+    <style>
+        .section {
+            display: none;
+        }
+    </style>
+    <script>
+
+        function showSection(sectionId, buttonTest) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            var section = document.getElementById(sectionId);
+            section.style.display = 'block';
+
+            var sectionButton = document.getElementsByClassName('section-button');
+            for (var i = 0; i < sectionButton.length; i++) {
+                sectionButton[i].style.backgroundColor = '#b4caff';
+                sectionButton[i].style.color = 'black';
+            }
+
+            buttonTest.style.backgroundColor = '#201F24';
+            buttonTest.style.color = 'white';
+        }
+    </script>
+    <title>RF | Inicio</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div id="navlogo-container">
+            <img id="logo" src="./img/nav-logo.svg" alt="Logo">
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="./img/menu.svg" alt="Menu"></label>
+        <div id="nav-items">
+            <ul>
+                <li><a class="main-about" id="selected" href="#">Inicio</a></li>
+                <li><a class="main-about" href="./aboutMe/aboutMe.html">Sobre mí</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main-div">
+        <div id="main-text">
+            <div id="main-logo-container">
+                <img id="main-logo" src="./img/nav-logo.svg" alt="main-logo">
+            </div>
+            <div id="main-description">
+                <h1>Rogelio Raúl Castañeda Flores</h1>
+                <p>
+                    A continuación se presentan los temas vistos durante el primer semestre de
+                    la carrera de Ingeniería en Sistemas en la Universidad Mariano Gálvez de
+                    Guatemala en la sede de Villa Nueva
+                </p>
+            </div>
+        </div>
+        <div id="main-images">
+            <div class="images">
+                <img src="./img/main1.svg" alt="main1">
+            </div>
+            <div class="images">
+                <img src="./img/main2.svg" alt="main2">
+            </div>
+            <div class="images">
+                <img src="./img/main3.svg" alt="main3">
+            </div>
+        </div>
+    </div>
+    <div class="sections-container">
+        <div onclick="showSection('section1', this)" class="section-button">
+            Introducción</div>
+        <div onclick="showSection('section2', this)" class="section-button">
+            Redes de Computadoras</div>
+        <div onclick="showSection('section3', this)" class="section-button">
+            Análisis de Sistemas</div>
+        <div onclick="showSection('section4', this)" class="section-button">
+            Base de Datos</div>
+        <div onclick="showSection('section5', this)" class="section-button">
+            Desarrollo de Sistemas</div>
+    </div>
+    <div id="section" class="section"
+        style="display: flex; justify-content: center; align-items: center; height: 30vh; text-align: center;">
+        <div>
+            <h5>Seleccione una opción en la barra de categorías</h5>
+        </div>
+    </div>
+
+    <div id="section1" class="section">
+        <div>
+            <div class="container-card">
+                <div class="div-card">
+                    <a class="card" href="./cursos/generacionesPc.html">
+                        <img src="./img/generacionPc.jpg" alt="generacionPc" style="width: 100%;">
+                        <div class="card_container">
+                            <h4>Generaciones de PC</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-card">
+                    <a class="card" href="./cursos/generacionesLenguajes.html">
+                        <img src="./img/generacionLenguajes.svg" alt="generacionLenguajes" style="width: 100%;">
+                        <div class="card_container">
+                            <h4>Generaciones de lenguajes</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="div-card">
+                    <a class="card" href="./cursos/hardware.html">
+                        <img src="./img/hardware.svg" alt="hardware" style="width: 100%;">
+                        <div class="card_container">
+                            <h4>Hardware</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-card">
+            <div class="div-card">
+                <a class="card" href="./cursos/software.html">
+                    <img src="./img/software.svg" alt="software" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Software</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="section">
+        <div class="container-card">
+            <div class="div-card">
+                <a class="card" href="./cursos/redes.html">
+                    <img src="./img/redes.svg" alt="redes" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Redes de computadoras</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <div class="container-card">
+            <div class="div-card">
+                <a class="card" href="./cursos/matrizRequerimientos.html">
+                    <img src="./img/matrizRequerimientos.svg" alt="matrizRequerimientos" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Matriz de requerimientos</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="div-card">
+                <a class="card" href="./cursos/casosUso.html">
+                    <img src="./img/casosUso.svg" alt="casosUso" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Casos de uso</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4" class="section">
+        <div class="container-card">
+            <div class="div-card">
+                <a class="card" href="./cursos/entidadRelacion.html">
+                    <img src="./img/entidadRelacion.svg" alt="entidadRelacion" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Entidad Relación</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="div-card">
+                <a class="card" href="./cursos/sentenciasSQL.html">
+                    <img src="./img/database.svg" alt="database" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Sentencias SQL</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section5" class="section">
+        <div class="container-card">
+            <div class="div-card">
+                <a class="card" href="./cursos/pseudocodigo.html">
+                    <img src="./img/pseudocod.svg" alt="pseudocod" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Pseudocódigo</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="div-card">
+                <a class="card" href="./cursos/pseint.html">
+                    <img src="./img/pseint.svg" alt="pseint" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>PseInt</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="div-card">
+                <a class="card" href="./cursos/c++.html">
+                    <img src="./img/c++.svg" alt="c++" style="width: 100%;">
+                    <div class="card_container">
+                        <h4>Introducción a C++</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer id="pie-pagina">
+        <p id="derechos">Autor | Rogelio Raúl Castañeda Flores</p>
+    </footer>
+</body>
+
+</html>
